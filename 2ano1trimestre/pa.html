@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="css/mb.css" rel="stylesheet">
+    <title>Progressão Aritmética</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:  rgba(55, 189, 37, 0.822);">
+            <a class="navbar-brand" href="../index.html"><img src="../imgs/iconeexpresso.png" width="50" height="50"
+                    class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="bibliotecadameianoite.html"><b>Midnight Library</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pa.html"><b>Progressão Aritmética</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pg.html"><b>Progressão Geométrica</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matrizes.html"><b>Matrizes</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="determinantes.html"><b>Determinantes</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conclusao.html"><b>Conclusão</b></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <br>
+        <br>
+        <br>
+        <div class="fundo">
+            <p class="titulo">Progressão Aritmética</p>
+            <p>&nbsp;&nbsp;&nbsp;A progressão aritmética (PA) é uma sequência numérica em que cada termo é igual à soma do termo anterior com um número fixo, chamado de razão. Por exemplo, a sequência (1, 4, 7, 10, 13, ...) é uma progressão aritmética com razão 3, já que para obter cada termo a partir do anterior, é necessário adicionar 3. Da mesma forma, a sequência (10, 7, 4, 1, -2, ...) também é uma progressão aritmética com razão -3, já que para obter cada termo a partir do anterior, é necessário subtrair 3.</p>
+            <p>&nbsp;&nbsp;&nbsp;Assim, podemos descobrir a razão de uma PA subtraindo um número com o seu anterior, veja abaixo:</p>
+            <br>
+            <p class="centro"> ( a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, a<sub>4</sub>, ..., a<sub>n-1</sub>, a<sub>n</sub> ) </p>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>&nbsp;&nbsp;&nbsp;Nessa PA, a<sub>n</sub> é o último termo e a<sub>n-1</sub> é o penúltimo, isto porque, como podemos ver ao lado, o penúltimo número é o último menos a razão.</p>
+                </div>
+                <div class="col-sm-6">
+                    <p class="centro">a<sub>2</sub> = a<sub>1</sub> + r (razão)</p>
+                    <p class="centro">...</p>
+                    <p class="centro">a<sub>n</sub> = a<sub>n - 1</sub> + r</p>
+                    <br>
+                    <p class="centro">Razão: r = a<sub>n</sub> - a<sub>n - 1</sub></p>
+                </div>
+            </div>
+            <p>&nbsp;&nbsp;&nbsp;Também podemos classificar a progressão, podendo ser crescente caso r > 0, decrescente caso r < 0, ou até mesmo costante, quando r = 0. Por exemplo, uma PA ( 4, 4, 4, 4 ) é costante, já que o 4 será sempre somado com a razão 0.</p>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="fundo">
+            <p class="titulo">Fórmula do Termo Geral</p>
+            <p>&nbsp;&nbsp;&nbsp;Para descobrirmos um certo termo de uma progressão aritmética utilizamos a fórmula do termo geral, que nos permite descobrir esse termo através do primeiro termo e da razão dessa progressão. Veja a fórmula abaixo: </p>
+            <p class="centro">a<sub>n</sub> = a<sub>1</sub> + ( n - 1 ) r</p>
+            <br>
+            <p class="centro">OBS.: Ao passar de a<sub>1</sub> para a<sub>n</sub> avançamos ( n - 1 ) termos.</p>
+            <ul>
+                <li>a<sub>1</sub> -> 1° termo da progressão;</li>
+                <li>a<sub>n</sub> -> termo geral da progressão;</li>
+                <li>n -> número de termos da progressão ou posição do termo que deseja saber;</li>
+                <li>r -> razão.</li>
+            </ul>
+            <br>
+            <img src="imgs/divider.png" class="img-fluid">
+            <br>
+            <p>EX.: Temos uma PA ( 3, 5, 7, ... ) e gostaríamos de descobrir o 50° termo dessa progressão.</p>
+            <p>RESPOSTA: Primeiro precisamos observar os valores que já temos. Sabemos que a<sub>1</sub> = 3 e que a razão é r = a<sub>2</sub> - a<sub>1</sub> = 5 - 3 = 2. O enunciado nos informa que precisamos saber o 50° termo, logo n = 50. Então, tendo essas informações basta utilizarmos a fórmula.</p>
+            <p class="centro">a<sub>50</sub> = 3 + ( 50 - 1 ) 2</p>
+            <p class="centro">a<sub>50</sub> = 3 + 98</p>
+            <p class="centro">a<sub>50</sub> = 101</p>
+            <br>
+            <img src="imgs/divider.png" class="img-fluid">
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;Assim como outras funções, também podemos descobrir outros termos além do termo geral através dessa fórmula. </p>
+            <p>EX.: Tenho uma progressão em que a razão é -3 e sei que a<sub>1</sub> = 5 e que o último termo é -22, preciso descobrir quantos termos essa sequência tem. </p>
+            <p>RESPOSTA: Sabemos que n pode ser tanto o número do termo que desejamos saber, quanto o número de termo de uma PA, isso porque, se soubermos o último termo, podemos utilizar ele como termo geral e quando formos descobrir o n saberemos sua posição e consequentemente o número de termos dessa PA. Então, sabemos que a<sub>1</sub> = 5, r = -3, a<sub>n</sub> = -22, e precisamos descobrir n.</p>
+            <p class="centro">-22 = 5 + ( n - 1 ) ( -3 )</p>
+            <p class="centro">-22 = 5 - 3n + 3</p>
+            <p class="centro">3n = 8 + 22</p>
+            <p class="centro">n = 10</p>
+            <br>
+            <img src="imgs/divider.png" class="img-fluid">
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;Também podemos descobrir os termos de uma progressão aritmética levando em consideração apenas a razão e aquilo de que a razão vai ser um número menos o seu anterior.</p>
+            <br>
+            <p>EX.: Temos uma PA ( x<sup>2</sup>, (x + 2)<sup>2</sup>, (x + 3)<sup>2</sup> ), sabendo isto, qual é p valor de x?</p>
+            <p>RESPOSTA: Sabemos que a<sub>1</sub> = x<sup>2</sup>, a<sub>2</sub> = (x + 2)<sup>2</sup> e a<sub>3</sub> = (x + 3)<sup>2</sup>. Também sabemos que razão = a<sub>2</sub> - a<sub>1</sub> = a<sub>3</sub> - a<sub>2</sub>. Então, basta substituirmos os termos dessa ideia da razão e encontrarmos o x. </p>
+            <p class="centro">( x + 2 )<sup>2</sup> - x<sup>2</sup> = ( x + 3 )<sup>2</sup> - ( x + 2 )<sup>2</sup></p>
+            <p class="centro">x<sup>2</sup> + 4x + 4 - x<sup>2</sup> = x<sup>2</sup> + 6x + 9 - ( x<sup>2</sup> + 4x + 4 )</p>
+            <p class="centro">4x + 4 = 2x + 5</p>
+            <p class="centro">2x = 1</p>
+            <p class="centro">x = <sup>1</sup>/<sub>2</sub></p>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="fundo">
+            <p class="titulo">Interpolação Aritmética</p>
+            <p>&nbsp;&nbsp;&nbsp;Interpolação é inserção, logo na interpolação aritmética iremos inserir termos em uma progressão aritmética. Na interpolação chamamos a<sub>1</sub> e a<sub>n</sub> de extremos e os termos que iremos inserir entre eles serão os meios, os quais identificaremos como k.</p>
+            <p class="centro">( a<sub>1</sub>, k<sub>1</sub>, k<sub>2</sub>, k<sub>3</sub>, k<sub>4</sub>, k<sub>5</sub>, a<sub>n</sub> )</p>
+            <br>
+            <p>EX.: Precisamos interpolar 5 meios aritméticos entre 1 e 2.</p>
+            <p>RESPOSTA: Sabemos que a<sub>1</sub> = 1 e que a<sub>n</sub> = 2. Além disso, se precisamos interpolar 5 meios e temos 2 números, o tamanho dessa progressão é n = 7, então a<sub>7</sub> = 2. Para descobrirmos os outros números precisamos saber a razão dessa progressão, então através da função do termo geral iremos descobrir a razão.</p>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="centro">a<sub>n</sub> = a<sub>1</sub> + ( n - 1 ) r</p>
+                    <p class="centro">2 = 1 + 6r</p>
+                    <p class="centro">-6r = -1</p>
+                    <p class="centro">r = <sup>1</sup>/<sub>6</sub></p>
+                </div>
+                <div class="col-sm-6">
+                    <p class="centro">k<sub>1</sub> = 1 + <sup>1</sup>/<sub>6</sub> = <sup>7</sup>/<sub>6</sub> </p>
+                    <p class="centro">k<sub>2</sub> = 1 + <sup>7</sup>/<sub>6</sub> = <sup>8</sup>/<sub>6</sub> : 2 = <sup>4</sup>/<sub>3</sub> </p>
+                    <p class="centro">k<sub>3</sub> = 1 + <sup>8</sup>/<sub>6</sub> = <sup>9</sup>/<sub>6</sub> : 3 = <sup>3</sup>/<sub>2</sub></p>
+                    <p class="centro">k<sub>4</sub> = 1 + <sup>9</sup>/<sub>6</sub> = <sup>10</sup>/<sub>6</sub> : 2 = <sup>5</sup>/<sub>3</sub></p>
+                    <p class="centro">k<sub>5</sub> = 1 + <sup>10</sup>/<sub>6</sub> = <sup>11</sup>/<sub>6</sub> </p>
+                </div>
+            </div>
+            <br>
+            <p class="centro">Resultado Final : PA ( 1, <sup>7</sup>/<sub>6</sub>, <sup>4</sup>/<sub>3</sub>, <sup>3</sup>/<sub>2</sub>, <sup>5</sup>/<sub>3</sub>, <sup>11</sup>/<sub>6</sub>, 2 )</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="fundo">
+            <p class="titulo">Soma dos Termos de uma PA finita</p>
+            <p>&nbsp;&nbsp;&nbsp;Como o próprio título diz, a soma dos termos de uma PA finita será a soma dos termos de uma progressão aritmética até um certo termo n. Para isso utilizamos a seguinte fórmula:</p>
+            <p class="centro">S<sub>n</sub> = <sup>( a<sub>1</sub> + a<sub>n</sub> ) n</sup> / <sub>2</sub></p>
+            <br>
+            <p>EX.: Qual é a soma dos 25 primeiros termos de uma PA ( 1, 7, 13, ... )</p>
+            <p>RESPOSTA: Sabemos que a<sub>1</sub> = 1, n = 25 e r = 6, portanto, precisamos descobrir o valor de a<sub>25</sub> para poder calcular a soma dos 25 termos.</p>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="centro">a<sub>n</sub> = a<sub>1</sub> + ( n - 1 ) r</p>
+                    <p class="centro">a<sub>n</sub> = 1 + ( 25 - 1 ) 6</p>
+                    <p class="centro">a<sub>n</sub> = 145</p>
+                </div>
+                <div class="col-sm-6">
+                    <p class="centro">S<sub>n</sub> = <sup>( a<sub>1</sub> + a<sub>n</sub> ) n</sup> / <sub>2</sub></p>
+                    <p class="centro">S<sub>25</sub> = <sup>( 1 + a145 ) 25</sup> / <sub>2</sub></p>
+                    <p class="centro">S<sub>25</sub> = <sup>3650</sup>/<sub>2</sub> = 1825.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="fundo">
+            <p class="titulo">Atividades</p>
+            <p>&nbsp;&nbsp;&nbsp;Abaixo deixarei as resoluções de atividades sobre PA que fizemos na aula:</p>
+            <center>
+                <div id="demo" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/pa.jpg" width="90%" height="90%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/pa2.jpg"
+                            width="90%" height="90%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/pa3.jpg"
+                            width="90%" height="90%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/pa4.jpg"
+                            width="90%" height="90%">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </center>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="fundo">
+            <p class="titulo">Considerações</p>
+            <p>&nbsp;&nbsp;&nbsp;A Progressão Aritmética não foi um conteúdo muito difícil de entender, apenas tive problema para entender a ideia da soma dos termos, sendo que acabei errando na prova, mas isso foi em questão de confundir também quando utilizar PA e quando utilizar PG. No restante, foi um conteúdo simples, apesar de também ter tido um pouco de dificuldade em entender o conceito da razão, o que me causou uns problemas na hora de lidar com frações. Porém, fazendo o portfólio consegui entender algumas coisas a mais e creio que não tenho mais dificuldades no conteúdo.</p>
+            <br>
+            <center>
+                <button type="button" class="btn btn-primary" id="botao"><a href="pg.html">Continuar</a></button>
+             </center>
+            <br>
+        </div>
+        <br>
+        <br>
+    </div>
+    
+</body>
+</html>

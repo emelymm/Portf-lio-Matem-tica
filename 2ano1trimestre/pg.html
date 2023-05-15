@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="css/mb.css" rel="stylesheet">
+    <title>Progressão Geométrica</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:  rgba(55, 189, 37, 0.822);">
+            <a class="navbar-brand" href="../index.html"><img src="../imgs/iconeexpresso.png" width="50" height="50"
+                    class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="bibliotecadameianoite.html"><b>Midnight Library</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pa.html"><b>Progressão Aritmética</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pg.html"><b>Progressão Geométrica</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matrizes.html"><b>Matrizes</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="determinantes.html"><b>Determinantes</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conclusao.html"><b>Conclusão</b></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <br>
+        <br>
+        <br>
+        <div class="fundo">
+            <p class="titulo">Progressão Geométrica</p>
+            <p>&nbsp;&nbsp;&nbsp;Progressão Geométrica (PG), assim como a Progressão Arimética é uma sequência numérica, porém na PG o termo é igual a multiplicação do termo anterior com um número fixo. Esse número fixo será a razão, que na PG será representada por q. Por exemplo, a sequência ( 2, 4, 8, 16, ...) é uma sequência geométrica em que a razão é 2, </p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p> já que q = a<sub>2</sub> : a<sub>1</sub> = 4 : 2 = 2, e assim acontece sucessivamente, o 4 multiplicado por 2 resulta em 8 e assim por diante.</p>
+                </div>
+                <div class="col-sm-6">
+                    <br>
+                    <p class="centro">q = <u>a<sub>2</sub></u> = <u>a<sub>3</sub></u></p>
+                    <p class="centro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a<sub>1</sub> &nbsp;&nbsp;&nbsp; a<sub>2</sub></p>
+                </div>
+            </div>
+            <p>&nbsp;&nbsp;&nbsp;Uma progressão geométrica pode ser classificada de acordo com o comportamente da razão quanto a zero:</p>
+            <ul>
+                <li>Crescente: razão positiva e maior que 1;</li>
+                <li>Decrescente: razão negativa e maior que -1;</li>
+                <li>Constante: razão é igual a 1;</li>
+                <li>Estacionária: razão é igual a 0;</li>
+                <li>Alternanten: razão negativa e menor que -1.</li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="fundo">
+            <p class="titulo">Fórmula do Termo Geral</p>
+            <p>&nbsp;&nbsp;&nbsp;Para descobrirmos o termo geral de uma PG, assim como na PA também utilizamos uma fórmula. Assim, também conseguiremos descobrir um certo termo de uma progressão geométrica, utilizando a seguinte fórmula:</p>
+            <p class="centro">a<sub>n</sub> = a<sub>1</sub> . q<sup>n - 1</sup></p>
+            <ul>
+                <li>a<sub>n</sub> -> termo geral;</li>
+                <li>a<sub>1</sub> -> 1° termo da progressão;</li>
+                <li>q -> razão;</li>
+                <li>n -> número de termos da progressão ou posição do termo que deseja saber.</li>
+            </ul>
+            <br>
+            <img src="imgs/divider.png" class="img-fluid">
+            <br>
+            <p>EX.: Qual é o 7° termo da PG ( 2, 6, ...)
+            <p>RESPOSTA: Sabemos que a<sub>1</sub> = 2, q = 6 : 2 = 3, n = 7  e precisamos descobrir a<sub>7</sub>, então substituiremos os valores na fórmula do termo geral. </p>
+            <p class="centro">a<sub>7</sub> = 2 . 3<sup>7 - 1</sup></p>
+            <p class="centro">a<sub>7</sub> = 2 . 729</p>
+            <p class="centro">a<sub>7</sub> = 1458</p>
+            <br>
+            <img src="imgs/divider.png" class="img-fluid">
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;Também podemos descobrir termos da PG através da razão, como comentado na PA! Veja um exemplo:</p>
+            <p>EX.: Qual o valor de x de uma PG ( ( x + 1 ), ( x + 4 ), ( x + 10 ) )?</p>
+            <p>RESPOSTA: Primeiro sabemos que a<sub>1</sub> = ( x + 1 ), a<sub>2</sub> = ( x + 4 ) e a<sub>3</sub> = ( x + 10 ). Também sabemos que q = <sup>a<sub>2</sub></sup>/<sub>a<sub>1</sub></sub> = <sup>a<sub>3</sub></sup>/<sub>a<sub>2</sub></sub>, então basta utilizarmos essa razão substituindo os valores.</p>
+            <p class="centro"><sup>x + 4</sup>/<sub>x + 1</sub> = <sup>x + 10</sup>/<sub>x + 4</sub></p>
+            <p class="centro">( x + 4 ) ( x + 4 ) = ( x + 10 ) ( x + 1 )</p>
+            <p class="centro">x<sup>2</sup> + 4x + 4x + 16 = x<sup>2</sup> + x + 10x + 10</p>
+            <p class="centro">8x + 16 = 11x + 10</p>
+            <p class="centro">6 = 3x</p>
+            <p class="centro">x = 2</p>
+            <br>
+            <img src="imgs/divider.png" class="img-fluid">
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;A Progressão Geométrica pode ser encontrada em diferentes vestibulares e no Enem, podendo ser em perguntas nas quais precisamos entender o contexto para poder realizar a questão, veja um exemplo de uma questão do Enem de 2020:</p>
+            <p>EX.: </p>
+            <img src="imgs/questaoenem.png" class="img-fluid">
+            <br>
+            <p>RESPOSTA: A medida dos lados do quadrado formam uma PG, visto que, cada quadrado tem como lado a metade do outro, PG ( 1, <sup>1</sup>/<sub>2</sub>, <sup>1</sup>/<sub>4</sub>, ..., a<sub>100 )</sub>. Sabemos que a<sub>1</sub> = 1, q = <sup>1</sup>/<sub>2</sub> e n = 100, então utilizaremos a fórmula do termo geral para descobrir o valor de a<sub>100</sub>.</p>
+            <p class="centro">a<sub>100</sub> = 1 . ( <sup>1</sup>/<sub>2</sub> )<sup>100 - 1</sup></p>
+            <p class="centro">a<sub>100</sub> = ( <sup>1</sup>/<sub>2</sub> )<sup>99</sup></p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="fundo">
+            <p class="titulo">Interpolação Geométrica</p>
+            <p>&nbsp;&nbsp;&nbsp;A interpolação geométrica é a inserção de termos em uma progressão geométrica. Assim como na PA, na PG temos os meios k que serão inseridos e os extremos a<sub>1</sub> e a<sub>n</sub>.</p>
+            <p>EX.: Interpole 8 meios entre 5 e 2560.</p>
+            <p>RESPOSTA: Sabemos que a<sub>1</sub> = 5 e a<sub>n</sub>2560. Como precisamos interpolar 8 termos e já temos 2, então n = 10 a<sub>10</sub> = 2560. Precisamos descobrir o valor de q utilizando a fórmula do termo geral.</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="centro">a<sub>n</sub> = a<sub>1</sub> . q<sup>n - 1</sup></p>
+                    <p class="centro">2560 = 5 . q<sup>9</sup></p>
+                    <p class="centro">q<sup>9</sup> = 512</p>
+                    <p class="centro">q<sup>9</sup> = 2<sup>9</sup></p>
+                    <p class="centro">q = <sup>9√2<sup>9</sup></p>
+                    <p class="centro">q = 2</p>
+                </div>
+                <div class="col-sm-6">
+                    <p class="centro">k<sup>1</sup> = 5 . 2 = 10</p>
+                    <p class="centro">k<sup>2</sup> = 10 . 2 = 20</p>
+                    <p class="centro">k<sup>3</sup> = 20 . 2 = 40</p>
+                    <p class="centro">k<sup>4</sup> = 40 . 2 = 80</p>
+                    <p class="centro">k<sup>5</sup> = 80 . 2 = 160</p>
+                    <p class="centro">k<sup>6</sup> = 160 . 2 = 320</p>
+                    <p class="centro">k<sup>7</sup> = 320 . 2 = 640</p>
+                    <p class="centro">k<sup>8</sup> = 640 . 2 = 1280</p>
+                </div>
+            </div>
+            <br>
+            <p class="centro">PG ( 5, 10, 20, 40, 80, 160, 320, 640, 1280, 2560 )</p>
+            
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="fundo">
+            <p class="titulo">Soma dos Termos de uma PG finita</p>
+            <p>&nbsp;&nbsp;&nbsp;Assim como na Progressão Arimética, também podemos calcular a soma dos termos de uma Progressão Geométrica finita, para isso utilizamos a seguinte fórmula:</p>
+            <p class="centro">S<sub>n</sub> = a<sub>1</sub> . <sup>1 - q<sup>n</sup></sup>/<sub>1 - q</sub></p>
+            <br>
+            <p>EX.: Precisamos calcular a soma dos 6 primeiros termos da PG ( 2, 4, 8, 16, ...).</p>
+            <p>RESPOSTA: Sabemos que a<sub>1</sub> = 2, que n = 6  e que q = 4 : 2 = 2, então apenas precisamos substituir os valores na fórmula.</p>
+            <p class="centro">S<sub>6</sub> = 2 . <sup>1 - 2<sup>6</sup></sup>/<sub>1 - 2</sub></p>
+            <p class="centro">S<sub>6</sub> = 2 . <sup>-63</sup>/<sub>-1</sub></p>
+            <p class="centro">S<sub>6</sub> = 126</p>
+            <br>
+            <p class="titulo">Soma dos Termos de uma PG infinita</p>
+            <p>&nbsp;&nbsp;&nbsp;Quando -1 < q < 1 podemos calcular a soma dos termos de uma PG infinita. Como nesse caso por conta da razão a progressão irá tender a zero, acabará que q<sup>n</sup> = 0. Então, na hora de utilizar a fórmula ficará S<sub>n</sub> = a<sub>1</sub> . <sup>1 - 0</sup>/<sub>1 - q</sub>, fazendo com que a fórmula final seja:</p>
+            <p class="centro">S = <sup>a<sub>1</sub></sup>/<sub>1 - q</sub></p>
+            <br>
+            <p>EX.: A medida do lado de um triângulo equilátero é 10. Unindo-se os 
+                pontos médios de seus lados obtém-se os pontos médios dos lados desse 
+                novo triângulo equilátero. Unindo-se os pontos médios desse novo triângulo 
+                equilátero obtém-se um terceiro e assim por diante. Qual a soma dos 
+                perímetros de todos esses triângulos?</p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>RESPOSTA: Primeiro precisamos entender o que está acontecendo com esse triângulo, veja ao lado. No enunciado é pedido o perimetro, então em nossa PG precisaremos colocar o perímetro no lugar dos lados, sendo assim, a<sub>1</sub> = 10 . 3 = 30, a<sub>2</sub> = (10 : 2) . 3 = 15, ..., de forma que PG ( 30; 15; 7,5; ... )</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="imgs/triangulopg.png" class="img-fluid">
+                    </div>
+                </div>
+            <p>Então, além de sabermos que a<sub>1</sub> = 30, também sabemos que q = <sup>1</sup>/<sub>2</sub>, já que um será sempre a metade do outro. Portanto, basta substituirmos os valores na fórmula:</p>
+            <p class="centro">S = <sup>30</sup>/<sub>1 - <sup>1</sup>/<sub>2</sub></sub></p>
+            <p class="centro">S = 30 . <sup>2</sup>/<sub>1</sub></p>
+            <p class="centro">S = 60</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="fundo">
+            <p class="titulo">Atividades</p>
+            <p>&nbsp;&nbsp;&nbsp;Abaixo deixarei as resoluções de atividades sobre PG que fizemos na aula:</p>
+            <img src="imgs/pg.jpg" class="img-fluid">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="fundo">
+            <p class="titulo">Considerações</p>
+            <p>&nbsp;&nbsp;&nbsp;Sendo sincera, achei que havia entendido, mas chegou na hora da prova e percebi que não. Já havia tido problemas com a PG nos exercícios que fizemos em aula, mas pensei que tinha compreendido, porém na hora da prova houve o problema de ter confundido a PA com PG. Além disso, também achei mais difícil trabalhar com frações, mas como havia dito nas considerações da PA, foi porque ainda não tinha entendido muito a razão em si, agora creio que não tenho mais dúvidas.</p>
+            
+            <br>
+            <center>
+                <button type="button" class="btn btn-primary" id="botao"><a href="matrizes.html">Continuar</a></button>
+             </center>
+            <br>
+        </div>
+        <br>
+        <br>
+    </div>
+    
+</body>
+</html>

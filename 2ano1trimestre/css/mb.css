@@ -1,0 +1,85 @@
+body {
+    background-color: black;
+    background-image: url(../imgs/fundoo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: white;
+}
+
+#direita {
+    text-align: right;
+}
+@font-face {
+    font-family: Grandeux;
+    src: url(../../fontes/GrandeuxSerif_PERSONAL_USE_ONLY.otf);
+}
+
+.fundo {
+    background-color:  rgba(49, 190, 30, 0.692);
+    padding: 70px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+td {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+}
+p, li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 23px;
+    text-align: justify;
+}
+
+.nav-item {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+.titulo {
+    font-family: Grandeux;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+#botao {
+    background-color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    border: rgb(0, 0, 0);
+    font-size: 23px;
+}  
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.centro {
+    text-align: center;
+    line-height: 13px;
+}
+
+.tbcentro {
+    margin: 0 auto;
+}
+
+table {
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+}
