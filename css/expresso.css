@@ -6,6 +6,11 @@ body {
     background-size: cover;
 }
 
+#centro {
+    justify-content: center;
+    text-align: center;
+}
+
 .fundo{
     background-color:  rgba(86, 188, 247, 0.692);
     border-radius: 15px;
@@ -14,7 +19,6 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
-  
     justify-content: center;
 }
 
